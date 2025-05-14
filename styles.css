@@ -1,0 +1,175 @@
+body.homepage {
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+    font-family: 'Baloo', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .decorations .deco {
+    position: absolute;
+    z-index: 5;
+  }
+
+  .top-left {
+    top: 10px;
+    left: 10px;
+    width: 310px;
+  }
+  
+  .top-right {
+    top: 0px;
+    right: 0px;
+    width: 300px;
+  }
+  
+  .bottom-left {
+    bottom: 0px;
+    left: 0px;
+    width: 350px;
+  }
+  
+  .bottom-right {
+    bottom: 0px;
+    right: 10px;
+    width: 390px;
+  }
+  
+  
+  .container {
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  
+  .title {
+    background-color: #9EA56C;
+    padding: 12px 24px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 2rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    border: 5px solid #E7B7B7;
+    color: #EBE7CD;
+    margin-bottom: 20px;
+    margin-top: -5px;
+  }
+  
+  .photo-box {
+    width: 420px;
+    max-width: 90%;
+    margin-bottom: -46px;
+    margin-top: -56px;
+  }
+  
+  .start-btn {
+    font-size: 1.5rem;
+    padding: 12px 40px;
+    background-color: #C2D2E9;
+    color: #1B2751;
+    border: 3px solid #3852A7;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    font-family: 'Baloo', cursive;
+  }
+  
+  .start-btn:hover {
+    background-color: #dbe6ff;
+  }
+  
+  body.instructions-page {
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+    font-family: 'Baloo', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+  
+  .instruction-box {
+    background-color: #ebcdcd;
+    border: 5px solid #9DA56C;
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    z-index: 2;
+    position: relative;
+  }
+  
+  .instruction-box h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1B2751;
+  }
+  
+  .instruction-box p {
+    font-size: 1.2rem;
+    color: #3852A7;
+    margin: 10px 0;
+  }
+  
+  .next-btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #C2D2E9;
+    color: #1B2751;
+    border: 3px solid #3852A7;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Baloo', cursive;
+  }
+  
+  .next-btn:hover {
+    background-color: #dbe6ff;
+  }
+  
+  .decorations .deco {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* unique sizing/position for this page’s corner images */
+  .instructions-tl {
+    top: -30px;
+    left: 118px;
+    width: 360px;
+  }
+  
+  .instructions-tr {
+    top: 0px;
+    right: 0px;
+    width: 260px;
+  }
+  
+  .instructions-bl {
+    bottom: 0px;
+    left: 0px;
+    width: 370px;
+  }
+  
+  .instructions-br {
+    bottom: 0;
+    right: 170px;
+    width: 200px;
+  }
+  

@@ -39,4 +39,3 @@ https://www.figma.com/design/RxTt7SaNMG2ec3NSS2i2Tl/Photobooth-Website?node-id=1
 - Designed and developed by Cadence Fong
 - Inspired by Miffy, Japanese stationery, and cozy aesthetics
 
-=
