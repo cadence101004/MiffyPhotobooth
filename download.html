@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customize Frame</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+</head>
+<body class="download-page">
+  <div class="decorations">
+    <img src="images/strawberry.png" class="deco photobooth-tr" />
+    <img src="images/salad.png" class="deco photobooth-bl" />
+  </div>
+
+  <div class="canvas-container">
+    <canvas id="finalCanvas"></canvas>
+  </div>
+
+  <div class="frame-controls">
+    <h2>Select your frame!</h2>
+
+    <div class="color-grid">
+      <button class="color-btn" data-color="frames/frame1.png" style="background-image: url('frames/frame1.png');"></button>
+      <button class="color-btn" data-color="frames/frame2.png" style="background-image: url('frames/frame2.png');"></button>
+      <button class="color-btn" data-color="frames/frame3.png" style="background-image: url('frames/frame3.png');"></button>
+      <button class="color-btn" data-color="frames/frame4.png" style="background-image: url('frames/frame4.png');"></button>
+      <button class="color-btn" data-color="frames/frame5.png" style="background-image: url('frames/frame5.png');"></button>
+      <button class="color-btn" data-color="frames/frame6.png" style="background-image: url('frames/frame6.png');"></button>
+      <button class="color-btn" data-color="frames/frame7.png" style="background-image: url('frames/frame7.png');"></button>
+      <button class="color-btn" data-color="frames/frame8.png" style="background-image: url('frames/frame8.png');"></button>
+      <button class="color-btn" data-color="frames/frame9.png" style="background-image: url('frames/frame9.png');"></button>
+    </div>
+
+    <label>Upload your own frame:
+      <input type="file" id="frame-upload" accept="image/png">
+    </label>
+
+    <label>Pick a color:
+      <input type="color" id="frame-color">
+    </label>
+
+    <div class="button-group">
+      <a href="index.html"><button>Home</button></a>
+      <a href="photobooth.html"><button>Retake</button></a>
+      <button id="download-btn">Download</button>
+    </div>
+  </div>
+
+  <script src="download.js"></script>
+</body>
+</html>
+

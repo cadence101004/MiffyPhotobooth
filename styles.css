@@ -173,3 +173,161 @@ body.homepage {
     width: 200px;
   }
   
+  body.photobooth-page {
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+    font-family: 'Baloo', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .decorations .deco {
+    position: absolute;
+    z-index: 5;
+  }
+  
+  /* Only using 2 corners */
+  .photobooth-tr {
+    top: 0px;
+    right: 0px;
+    width: 300px;
+  }
+  
+  .photobooth-bl {
+    bottom: 0px;
+    left: 0px;
+    width: 390px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 90vw;
+    max-width: 500px;
+    aspect-ratio: 4/3;
+    border: 6px solid #434530;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  video#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1); /* mirror for front cam */
+  }
+  
+  .countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #71563A;
+    margin-bottom: -20px;
+  }
+  
+  .counter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #71563A;
+    margin-top: 0px;
+  }
+
+  body.download-page {
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+    font-family: 'Baloo', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .canvas-container {
+    margin-bottom: 20px;
+  }
+  
+  #finalCanvas {
+    background-color: #fff;
+  }
+  
+  .frame-controls {
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Baloo', cursive;
+  }
+  
+  .frame-controls h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #343522;
+    margin-top: -1rem;
+  }
+  
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .color-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #588041;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+  }
+  
+  .color-btn:hover {
+    transform: scale(1.05);
+    border-color: #9ea56c;
+  }
+  
+  label {
+    display: block;
+    margin: 20px 0;
+    font-size: 1.3rem;
+    color: #343522;
+  }
+  
+  input[type="file"],
+  input[type="color"] {
+    margin-top: 5px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    padding: 20px 24px;
+    font-size: 1.3rem;
+    font-family: 'Baloo', cursive;
+    background-color: #BBB7AB;
+    border: 3px solid #343522;
+    border-radius: 10px;
+    color: #588041;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 25px;
+  }
+  
+  .button-group button:hover {
+    background-color: #dcd5d5;
+  }
+  

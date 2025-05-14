@@ -109,3 +109,45 @@ function redirectToDownload() {
     sessionStorage.setItem("capturedPhotos", JSON.stringify(capturedPhotos));
     window.location.href = "download.html";
 }
+
+const photoStrip = document.getElementById("photo-strip");
+const presets = document.querySelectorAll(".preset");
+const uploadInput = document.getElementById("frame-upload");
+const colorInput = document.getElementById("frame-color");
+
+// Load photos from sessionStorage
+const photos = JSON.parse(sessionStorage.getItem("capturedPhotos") || "[]");
+
+photos.forEach(src => {
+  const img = document.createElement("img");
+  img.src = src;
+  photoStrip.appendChild(img);
+});
+
+// Preset color selection
+presets.forEach(preset => {
+  preset.addEventListener("click", () => {
+    photoStrip.style.backgroundImage = "";
+    photoStrip.style.backgroundColor = preset.style.backgroundColor;
+  });
+});
+
+// Custom color picker
+colorInput.addEventListener("input", () => {
+  photoStrip.style.backgroundImage = "";
+  photoStrip.style.backgroundColor = colorInput.value;
+});
+
+// Frame upload
+uploadInput.addEventListener("change", () => {
+  const file = uploadInput.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      photoStrip.style.backgroundImage = `url(${reader.result})`;
+      photoStrip.style.backgroundSize = "cover";
+      photoStrip.style.backgroundRepeat = "no-repeat";
+    };
+    reader.readAsDataURL(file);
+  }
+});
